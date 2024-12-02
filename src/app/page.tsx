@@ -1,12 +1,16 @@
+import { Navbar } from '@/components/nav-bar'
 import { Button } from '@/components/ui/button'
 import { ArrowUpRight } from 'lucide-react'
 
 export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">
-      <section className="flex flex-col w-full items-center bg-grid">
-        <div className="flex flex-col items-center w-full max-w-7xl px-4 py-32 gap-8">
-          <div className="flex flex-col gap-6 items-center">
+      <section className="flex flex-col w-full items-center overflow-y-visible">
+        <Navbar />
+        <div className="flex flex-col items-center w-full max-w-7xl px-4 py-32 gap-8 relative overflow-y-visible">
+          <div className="absolute w-[300px] h-[300px] rounded-full bg-yellow-200 left-1/2 right-1/2 -translate-x-1/2 top-[-150px] blur-[300px] opacity-75 -z-10" />
+          <div className="absolute -z-30 left-1/2 right-1/2 -translate-x-1/2 w-[1080px] bottom-[34px] h-[1080px] bg-grid"></div>
+          <div className="flex flex-col gap-6 items-center z-10">
             <span className="text-center">
               Automações e Desenvolvimento de IA Sob Demanda
             </span>
