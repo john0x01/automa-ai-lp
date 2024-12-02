@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">
-      <section className="flex flex-col w-full items-center">
+      <section className="flex flex-col w-full items-center bg-grid">
         <div className="flex flex-col items-center w-full max-w-7xl px-4 py-32 gap-8">
           <div className="flex flex-col gap-6 items-center">
             <span className="text-center">
