@@ -1,12 +1,13 @@
 import { User } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from './ui/button'
 
 export function Navbar() {
   return (
     <nav className="flex w-full max-w-[1440px] px-4 py-8 bg-black items-center justify-between relative z-50">
-      <h1>Logo</h1>
-      <ul className="flex items-center gap-8">
+      <Image src={'/logo.svg'} alt="logo" width={134} height={32} />
+      <ul className="flex items-center gap-8 absolute left-1/2 -translate-x-1/2 top-1/2 bottom-1/2 -translate-y-1/2">
         <li>
           <Link href="#product">Produto</Link>
         </li>
